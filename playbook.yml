@@ -1,0 +1,17 @@
+---
+# setup the mac with all dependencies I use for dev
+
+- hosts: mac 
+  roles:
+    - setup
+  tasks:
+    - name: say hello
+      command: 'echo hello stanton'
+    - name: ensure homebrew installed
+      homebrew:
+        state: latest
+        update_homebrew: yes
+    - name: ensure tig is installed
+      homebrew:
+        name: tig
+        state: latest
