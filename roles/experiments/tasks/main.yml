@@ -1,0 +1,5 @@
+---
+# tasks file for experiments
+- name: say something
+  debug:
+    msg: I am saying something
