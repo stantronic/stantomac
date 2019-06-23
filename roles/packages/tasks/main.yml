@@ -8,7 +8,7 @@
     update_homebrew: yes
 - name: cleanup homebrew
   command: brew cleanup
-- name: ensure latest git installed
+- name: ensure latest brew packages installed
   homebrew:
     name: 
      - git
@@ -25,9 +25,6 @@
      - htop 
      - watchman 
      - tree
-     - docker
-     - docker-compose
-     - docker-machine
     state: latest
 
 # gem dependencies

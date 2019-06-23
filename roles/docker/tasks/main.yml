@@ -1,0 +1,9 @@
+---
+# tasks file for docker
+ - name: install docker bits and pieces
+   homebrew:
+     name:
+      - docker
+      - docker-compose
+      - docker-machine
+    state: latest
