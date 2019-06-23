@@ -1,0 +1,14 @@
+---
+# tasks file for apps
+
+- name: ensure alfred is upgraded
+  homebrew_cask:
+    name: 
+     - alfred
+     - iterm2
+     - insomnia
+     - virtualbox
+     - vagrant
+     - google-chrome
+     - firefox
+    state: upgraded

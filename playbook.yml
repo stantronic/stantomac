@@ -2,6 +2,8 @@
 # setup the mac with all dependencies I use for dev
 
 - hosts: mac 
+  connection: local
   roles:
-    - experiments
+    - apple
+    - apps
     - packages 

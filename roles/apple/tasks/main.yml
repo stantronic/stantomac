@@ -1,0 +1,11 @@
+---
+# tasks file for apple
+
+ - name: update apple software
+   raw: softwareupdate -ia
+ - name: ensure latest mas installed
+   homebrew:
+     name: mas
+     state: latest
+ - name: upgrade app store apps
+   command: mas upgrade

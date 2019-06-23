@@ -6,62 +6,55 @@
   homebrew:
     state: latest
     update_homebrew: yes
-- name: ensure latest telnet is installed
+- name: cleanup homebrew
+  command: brew cleanup
+- name: ensure latest git installed
   homebrew:
-    name: telnet
+    name: 
+     - git
+     - imagemagick
+     - htop
+     - tree
+     - coreutils
+     - telnet
+     - ruby
+     - fish
+     - node
+     - yarn
+     - python
+     - htop 
+     - watchman 
+     - tree
+     - docker
+     - docker-compose
+     - docker-machine
     state: latest
-- name: ensure latest ruby is installed 
-  homebrew:
-    name: ruby
-    state: latest
-- name: ensure latest fish is installed 
-  homebrew:
-    name: fish
-    state: latest
-- name: ensure latest node is installed 
-  homebrew:
-    name: node
-    state: latest
-- name: ensure latest yarn is installed 
-  homebrew:
-    name: yarn
-    state: latest
-- name: ensure latest python is installed 
-  homebrew:
-    name: python
-    state: latest
-
-# homebrew casks
-
-- name: ensure alfred is upgraded
-  homebrew_cask:
-    name: alfred
-    state: upgraded
-- name: ensure iterm2 is upgraded
-  homebrew_cask:
-    name: iterm2
-    state: upgraded
-
-- name: ensure insomnia is upgraded
-  homebrew_cask:
-    name: insomnia
-    state: upgraded
 
 # gem dependencies
 - name: ensure latest bundler is installed
   gem:
     name: bundler
     state: latest
-
-- name: ensure latest cocoapods is installed
   gem:
     name: cocoapods
     state: latest
-
-- name: ensure latest fastlane is installed
   gem:
     name: fastlane
     state: latest
 
-
+    # - name: ensure latest cocoapods is installed
+    #   gem:
+    #     name: cocoapods
+    #     state: latest
+    # 
+    # - name: ensure latest fastlane is installed
+    #   gem:
+    #     name: fastlane
+    #     state: latest
+    # 
+# upgrade ansible 
+#- name: ensure ansible upgraded 
+#  pip:
+#    name: ansible
+#    version: 2.8.0
 
