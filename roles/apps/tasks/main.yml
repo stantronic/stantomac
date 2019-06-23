@@ -11,4 +11,5 @@
      - vagrant
      - google-chrome
      - firefox
+     - visual-studio-code
     state: upgraded
