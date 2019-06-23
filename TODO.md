@@ -1,1 +1,7 @@
-## Apps not yet under homebrew/cask
+## TODO:
+
+* Develop docker setup
+* Add Jetbrains setup
+* Add ansible-vault
+* Refactor to better structure
+* Document 
