@@ -15,12 +15,12 @@ else
   ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
 fi
 
-WHICH_EASY_INSTALL=$(which easy_install)
-if [[ $WHICH_EASY_INSTALL == "/usr/local/bin/easy_install" ]]; then
-  echo "Easy Install already installed at $WHICH_EASY_INSTALL"
+
+WHICH_ANSIBLE=$(which ansible)
+if [[ $WHICH_ANSIBLE == "/usr/local/bin/ansible" ]]; then
+  echo "Ansible already installed at $WHICH_ANSIBLE"
 else
-  echo "Easy Install not installed"
-  exit 1
+  brew install ansible 
 fi
 
 ansible-playbook playbook.yml

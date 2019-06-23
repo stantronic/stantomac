@@ -35,26 +35,11 @@
   gem:
     name: bundler
     state: latest
+- name: ensure latest cocoapods installed
   gem:
     name: cocoapods
     state: latest
+- name: ensure latest fastlane installed
   gem:
     name: fastlane
     state: latest
-
-    # - name: ensure latest cocoapods is installed
-    #   gem:
-    #     name: cocoapods
-    #     state: latest
-    # 
-    # - name: ensure latest fastlane is installed
-    #   gem:
-    #     name: fastlane
-    #     state: latest
-    # 
-# upgrade ansible 
-#- name: ensure ansible upgraded 
-#  pip:
-#    name: ansible
-#    version: 2.8.0
-
