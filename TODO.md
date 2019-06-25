@@ -4,4 +4,6 @@
 * Add Jetbrains setup
 * Add ansible-vault
 * Refactor to better structure
-* Document 
+* Document everything
+
+* Commit 1
