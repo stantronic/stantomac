@@ -13,4 +13,5 @@
      - firefox
      - visual-studio-code
      - slack
+     - steam
     state: upgraded
