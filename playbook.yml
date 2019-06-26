@@ -5,5 +5,5 @@
   connection: local
   roles:
     - apple
-    - apps
     - packages 
+    - apps

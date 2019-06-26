@@ -8,6 +8,7 @@
     # General utils
      - alfred # Spotlight-like system-wide search app
      - dashlane # Password manager
+     - duet # For screen share
 
     # Dev utils:
      - iterm2 # alternative terminal app
@@ -35,7 +36,6 @@
     # fun:
      - steam
      - zoom
-     - fuse-emulator
 
     state: upgraded
 

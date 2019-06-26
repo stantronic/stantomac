@@ -31,13 +31,17 @@
 # gem dependencies
 - name: ensure latest bundler is installed
   gem:
-    name: bundler
+    name: "{{ item }}"
     state: latest
-- name: ensure latest cocoapods installed
-  gem:
-    name: cocoapods
-    state: latest
-- name: ensure latest fastlane installed
-  gem:
-    name: fastlane
-    state: latest
+  with_items:
+   - bundler
+   - cocoapods
+   - fastlane
+# - name: ensure latest cocoapods installed
+#   gem:
+#     name: cocoapods
+#     state: latest
+# - name: ensure latest fastlane installed
+#   gem:
+#     name: fastlane
+#     state: latest

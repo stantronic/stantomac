@@ -1,2 +1,5 @@
 ---
 # vars file for stantomac
+ansible_become_method: sudo 
+ask_become_pass: true
+ask_become_password: "{{ sudo_password }}"
