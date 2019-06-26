@@ -4,15 +4,38 @@
 - name: ensure apps are installed and upgraded
   homebrew_cask:
     name: 
-     - alfred
-     - iterm2
-     - insomnia
-     - virtualbox
-     - vagrant
-     - google-chrome
+
+    # General utils
+     - alfred # Spotlight-like system-wide search app
+     - dashlane # Password manager
+
+    # Dev utils:
+     - iterm2 # alternative terminal app
+     - insomnia # REST and GraphQL API client
+     - virtualbox # Manages virtual machines
+     - vagrant # Provisiioning tool for virtual machines
+     - visual-studio-code # Code editor
+
+    # Animation
+     - blender
+     - synfigstudio
+     - opentoonz
+
+    # Art
+     - gimp
+
+    # browsers:
+     - google-chrome 
      - firefox
-     - visual-studio-code
+     
+    # communication:
      - slack
+     - skype
+
+    # fun:
      - steam
      - zoom
+     - fuse-emulator
+
     state: upgraded
+

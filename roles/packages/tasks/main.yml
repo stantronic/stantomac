@@ -25,6 +25,7 @@
      - htop 
      - watchman 
      - tree
+     - wget
     state: latest
 
 # gem dependencies
