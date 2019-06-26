@@ -27,6 +27,8 @@ else
   brew install ansible 
 fi
 
+echo "Ready to run ansible script..."
+
 ansible-playbook playbook.yml 
 
 echo "all done"
