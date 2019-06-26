@@ -23,6 +23,6 @@ else
   brew install ansible 
 fi
 
-ansible-playbook playbook.yml --ask-become-pass
+ansible-playbook playbook.yml 
 
 exit 0
