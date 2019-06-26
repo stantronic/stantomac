@@ -25,4 +25,6 @@ fi
 
 ansible-playbook playbook.yml 
 
+echo "all done"
+
 exit 0
