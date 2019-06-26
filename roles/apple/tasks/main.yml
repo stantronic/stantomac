@@ -9,4 +9,3 @@
      state: latest
  - name: upgrade app store apps
    command: mas upgrade
-   become: yes
