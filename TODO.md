@@ -8,4 +8,7 @@
 * Experiment with squashing
 * Clean up todo file
 * Experiment with another mac
+* no. 1
+* no. 2
+
 * Nothing else -------------
