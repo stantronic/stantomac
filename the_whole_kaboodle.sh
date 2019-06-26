@@ -1,4 +1,7 @@
 #!/bin/bash
+
+echo "Stantomac! -- lets set up your mac with loadsa goodies"
+
 WHICH_XCODE=$(xcode-select --install 2>&1) 
 if [[ $WHICH_XCODE == *"already"* ]]; then
   echo "Xcode command line tools already installed"
@@ -25,5 +28,7 @@ else
 fi
 
 ansible-playbook playbook.yml 
+
+echo "all done"
 
 exit 0
