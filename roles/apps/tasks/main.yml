@@ -16,15 +16,16 @@
      - virtualbox # Manages virtual machines
      - vagrant # Provisiioning tool for virtual machines
      - visual-studio-code # Code editor
+     - vysor # Mirrors connected android device screen
 
     # Animation
-     - blender
-     - synfigstudio
-     - opentoonz
+     - blender # 3D animation platform
+     - synfigstudio # 2D animation platform
+     - opentoonz # 2D animation platform
 
     # Art
-     - gimp
-     - drawio
+     - gimp # 2D image manipulation package
+     - drawio # Diagramming tool
 
     # browsers:
      - google-chrome 
