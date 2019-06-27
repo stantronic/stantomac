@@ -26,6 +26,7 @@
      - watchman 
      - tree
      - wget
+     - vim
     state: latest
 
 # gem dependencies
