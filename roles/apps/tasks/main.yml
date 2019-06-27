@@ -24,6 +24,7 @@
 
     # Art
      - gimp
+     - drawio
 
     # browsers:
      - google-chrome 
