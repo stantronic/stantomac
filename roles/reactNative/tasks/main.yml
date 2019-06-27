@@ -1,0 +1,7 @@
+---
+# tasks file for reactNative
+ - name: Install expo-cli @latest
+   npm:
+     global: true
+     name: expo-cli
+     state: latest

@@ -2,7 +2,8 @@
 # tasks file for apple
 
  - name: update apple software
-   raw: softwareupdate -ia
+   raw: softwareupdate -ia --restart
+   become: true
  - name: ensure latest mas installed
    homebrew:
      name: mas
