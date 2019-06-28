@@ -27,6 +27,7 @@
      - tree
      - wget
      - vim
+     - mongo
     state: latest
 
 # gem dependencies

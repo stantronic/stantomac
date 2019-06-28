@@ -1,0 +1,4 @@
+---
+# vars file for stantomac
+random_variable: "sausages"
+ansible_become_password: "{{ sudo_password }}"
